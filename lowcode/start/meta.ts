@@ -1,8 +1,8 @@
-import { ComponentMetadata, Snippet } from '@alilc/lowcode-engine';
+import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 
-const SendEmailMeta: ComponentMetadata = {
-  componentName: 'SendEmail',
-  title: '发送邮件',
+const StartMeta: ComponentMetadata = {
+  componentName: 'Start',
+  title: '开始',
   docUrl: '',
   screenshot: '',
   devMode: 'proCode',
@@ -10,7 +10,7 @@ const SendEmailMeta: ComponentMetadata = {
   npm: {
     package: 'compileflow-material',
     version: '0.1.0',
-    exportName: 'SendEmail',
+    exportName: 'Start',
     main: 'src/index.tsx',
     destructuring: true,
     subName: '',
@@ -32,6 +32,21 @@ const SendEmailMeta: ComponentMetadata = {
           initialValue: '',
         },
       },
+      {
+        title:{
+          label: {
+            type: 'i18n',
+            'en-US': 'tag',
+            'zh-CN': 'tag',
+          },
+        },
+        name: 'tag',
+        setter: {
+          componentName: 'StringSetter',
+          isRequired: false,
+          initialValue: '',
+        }
+      }
     ],
     supports: {
       style: false,
@@ -41,20 +56,20 @@ const SendEmailMeta: ComponentMetadata = {
     component: {},
   },
   category: '事件节点',
-  priority: 1
+  priority: 2
 };
 const snippets: Snippet[] = [
   {
-    title: '发送邮件',
-    screenshot: '',
+    title: '开始',
+    screenshot: './assets/image/green-circle.png',
     schema: {
-      componentName: 'SendEmail',
+      componentName: 'Start',
       props: {},
     },
   },
 ];
 
 export default {
-  ...SendEmailMeta,
+  ...StartMeta,
   snippets,
 };

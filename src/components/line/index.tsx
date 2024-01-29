@@ -1,4 +1,4 @@
-const SequenceFlow = () => ({
+const Line = () => ({
   attrs: {
     line: {
       stroke: '#4C6079',
@@ -14,4 +14,4 @@ const SequenceFlow = () => ({
   },
 });
 
-export default SequenceFlow;
+export default Line;
