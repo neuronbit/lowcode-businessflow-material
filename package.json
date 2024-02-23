@@ -86,7 +86,8 @@
     "@alifd/next": "^1.25.27",
     "@babel/runtime": "^7.0.0",
     "moment": "latest",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "styled-icons": "^10.47.0"
   },
   "acceptDependencies": {
     "webpack": "^4.46.x"

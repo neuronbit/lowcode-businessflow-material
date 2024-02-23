@@ -1,14 +1,16 @@
 import {createElement} from 'react';
 import {Node} from '@antv/x6';
-import {Button, Card} from "@alifd/next";
+import {Card} from "@alifd/next";
+import {join, split, takeRight} from "lodash";
+import '../../index.scss';
 
 const AutoTask = () => ({
-  width: 304,
-  height: 110,
+  width: 164,
+  height: 72,
   shape: 'react-shape',
-  tools:[{
-    name: 'button-remove',
-  }],
+  // tools: [{
+  //   name: 'button-remove',
+  // }],
   ports: {
     groups: {
       top: {
@@ -100,25 +102,18 @@ const AutoTask = () => ({
     ],
   },
   component(node: Node) {
-    const name = node.prop<string>('name');
+    const name = node.prop<string>('name') || 'please input name';
     const type = node.prop<string>('type');
-    const bean = node.prop<string>('bean');
-    const clazz = node.prop<string>('clazz');
+    let method = node.prop<string>('method');
+    method = method ? join(takeRight(split(method, '.'), 2), '.') : 'not selected';
     return (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          border: '2px solid #9254de',
-          borderRadius: 4,
-          background: '#efdbfd',
-        }}
-      >
-        <Card free style={{width: 300}}>
-          <Card.Header title={name} subTitle={type}/>
-          <Card.Divider/>
-          <Card.Content>
-            {bean}.{clazz}
+      <div className={'task auto-task'}>
+        <Card free style={{width: 160, backgroundColor: 'transparent', border: '0px'}}>
+          <Card.Header title={name} subTitle={type}
+                       style={{margin: '2px', padding: '0px', backgroundColor: 'transparent'}}/>
+          <Card.Divider style={{border: '1px solid #0b2e59',}}/>
+          <Card.Content style={{margin: '2px', padding: '0px', color: 'white', textAlign: 'center'}}>
+            {method}
           </Card.Content>
         </Card>
       </div>
