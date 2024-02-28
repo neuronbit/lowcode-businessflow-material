@@ -8,7 +8,7 @@ const LineMeta: ComponentMetadata = {
   tags: ['edge'],
   devMode: 'proCode',
   npm: {
-    package: 'compileflow-material',
+    package: 'lowcode-businessflow-material',
     version: '0.1.0',
     exportName: 'Line',
     main: 'src/index.tsx',

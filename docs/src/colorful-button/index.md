@@ -6,7 +6,7 @@
 
 ```tsx
 import React from 'react';
-import { ColorfulButton } from 'compileflow-material';
+import { ColorfulButton } from 'lowcode-businessflow-material';
 
 
 export default () => {

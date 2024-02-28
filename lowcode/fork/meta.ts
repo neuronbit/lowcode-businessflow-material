@@ -8,7 +8,7 @@ const ForkMeta: ComponentMetadata = {
   devMode: 'proCode',
   tags: ['node'],
   npm: {
-    package: 'compileflow-material',
+    package: 'lowcode-businessflow-material',
     version: '0.1.0',
     exportName: 'Fork',
     main: 'src/index.tsx',

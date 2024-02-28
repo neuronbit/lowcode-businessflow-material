@@ -8,7 +8,7 @@ const AutoTaskMeta: ComponentMetadata = {
   devMode: 'proCode',
   tags: ['node'],
   npm: {
-    package: 'compileflow-material',
+    package: 'lowcode-businessflow-material',
     version: '0.1.0',
     exportName: 'AutoTask',
     main: 'src/index.tsx',

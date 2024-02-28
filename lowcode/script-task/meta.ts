@@ -8,7 +8,7 @@ const ScriptTaskMeta: ComponentMetadata = {
   devMode: 'proCode',
   tags: ['node'],
   npm: {
-    package: 'compileflow-material',
+    package: 'lowcode-businessflow-material',
     version: '0.1.0',
     exportName: 'ScriptTask',
     main: 'src/index.tsx',

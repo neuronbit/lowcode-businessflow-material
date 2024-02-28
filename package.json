@@ -1,7 +1,7 @@
 {
-  "name": "compileflow-material",
+  "name": "lowcode-businessflow-material",
   "version": "0.1.0",
-  "description": "compileflow-material",
+  "description": "lowcode-businessflow-material",
   "main": "lib/index.js",
   "module": "es/index.js",
   "exports": {
@@ -31,7 +31,7 @@
     "lowcode_es/"
   ],
   "scripts": {
-    "build": "build-scripts build",
+    "build": "build-scripts build --config ./build.lowcode.js",
     "lowcode:dev": "build-scripts start --config ./build.lowcode.js",
     "lowcode:build": "build-scripts build --config ./build.lowcode.js",
     "f2elint-scan": "f2elint scan",
@@ -97,7 +97,7 @@
   },
   "componentConfig": {
     "isComponentLibrary": true,
-    "materialSchema": "https://unpkg.com/compileflow-material@0.1.0/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/lowcode-businessflow-material@0.1.0/build/lowcode/assets-prod.json"
   },
   "lcMeta": {
     "type": "component"

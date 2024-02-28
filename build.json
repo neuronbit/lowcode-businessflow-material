@@ -1,5 +1,5 @@
 {
-  "library": "CompileFlow",
+  "library": "lowcode-businessflow-material",
   "libraryTarget": "umd",
   "sourceMap": true,
   "externals": {
